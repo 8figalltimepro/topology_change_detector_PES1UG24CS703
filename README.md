@@ -168,7 +168,7 @@ Open terminal 1 and start POX:
 
 ```bash
 cd ~/pox
-PYTHONPATH=$HOME/topology_change_detector-PES1UG24CS703 \
+PYTHONPATH=$HOME/topology_change_detector_PES1UG24CS703 \
 ./pox.py log.level --INFO \
 openflow.of_01 --port=6633 \
 openflow.discovery --link_timeout=6 \
@@ -181,7 +181,7 @@ topology_change_detector \
 Open terminal 2 and start Mininet:
 
 ```bash
-cd ~/topology_change_detector-PES1UG24CS703
+cd ~/topology_change_detector_PES1UG24CS703
 sudo python3 topologies/topology_change_demo.py --controller-ip 127.0.0.1 --controller-port 6633
 ```
 
@@ -241,13 +241,13 @@ Expected observations:
 ### 1. Controller log
 
 ```bash
-tail -f ~/topology_change_detector-PES1UG24CS703/artifacts/topology_events.log
+tail -f ~/topology_change_detector_PES1UG24CS703/artifacts/topology_events.log
 ```
 
 ### 2. Current topology map
 
 ```bash
-cat ~/topology_change_detector-PES1UG24CS703/artifacts/topology_state.json
+cat ~/topology_change_detector_PES1UG24CS703/artifacts/topology_state.json
 ```
 
 ### 3. Packet capture
